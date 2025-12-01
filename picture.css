@@ -1,0 +1,60 @@
+/* -------------------------------
+   picture.css
+   Styrer kun billeder og logo
+-------------------------------- */
+
+/* Logo */
+#logo-billede {
+  width: 70px;          /* justér størrelsen fx 50–90px */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+#logo-billede:hover {
+  transform: scale(1.1); /* lille zoom ved hover */
+}
+
+/* Oliver-billedet */
+#oliver-billede {
+  width: 75%;           /* gør billedet lidt mindre */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+#oliver-billede:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay-tekst ovenpå featured-billedet */
+.overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Galleri-billeder */
+.gallery-item img {
+  width: 85%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
